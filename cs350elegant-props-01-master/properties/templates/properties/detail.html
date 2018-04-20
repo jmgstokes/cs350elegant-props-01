@@ -1,0 +1,15 @@
+<!-- properties/detail.html -->
+{% extends "core/base.html" %}
+{% load humanize %}
+
+{% block page_title %} Description {% endblock page_title %}
+
+{% block content %}
+
+<p>{{object.price}}</p>
+<p>{{object.description}}</p>
+<p>{{object.nearest_elementary}}</p>
+<p>{{object.zip_code}}</p>
+
+
+{% endblock content %}

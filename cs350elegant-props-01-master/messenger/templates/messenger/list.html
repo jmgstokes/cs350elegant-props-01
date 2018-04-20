@@ -1,0 +1,18 @@
+<!-- messenger/list.html -->
+{% extends "core/base.html" %}
+{% load humanize %}
+
+{% block page_title %} Messenger/Reviews {% endblock page_title %}
+
+{% block page_header %}Your Messages{% endblock page_header %}
+
+{% block content %}
+
+{% for message in object_list %}
+
+<p>{{message.subject}}</p>
+	<a href="{% url 'properties:detail' message.pk %}" class="btn-primary btn-sm">Click Here</a>
+
+{% endfor %}
+
+{% endblock content %}
