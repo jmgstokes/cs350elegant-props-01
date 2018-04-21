@@ -11,6 +11,6 @@ class Property(models.Model):
     nearest_elementary = models.CharField(max_length=256)
 
 
-    zip_code = models.IntegerField(Null=True)
+    zip_code = models.IntegerField(null=True)
 
 
